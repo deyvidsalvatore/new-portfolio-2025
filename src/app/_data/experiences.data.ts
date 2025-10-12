@@ -173,7 +173,7 @@ Colaborei com times de engenharia para garantir consistência dos dados e automa
     logo: 'assets/img/enterprise/programmersbeyondit_logo.jpg',
   },
   {
-    title: 'Estagiário Desenvolvedor',
+    title: 'Desenvolvedor Trainee',
     company: 'Wipro',
     period: 'Jul 2022 – Out 2023',
     location: 'Remoto',
