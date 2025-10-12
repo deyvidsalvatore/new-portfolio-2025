@@ -1,0 +1,9 @@
+.theme-toggle-icon, .lang-icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: inherit;
+
+  &:hover {
+    color: #007bff;
+  }
+}

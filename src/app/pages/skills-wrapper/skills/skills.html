@@ -1,0 +1,25 @@
+<div class="skills-section-inner" [class.dark]="currentTheme() === 'dark'">
+  <div class="skills-header">
+    <h2>{{ data().title }}</h2>
+    <p class="subtitle">{{ data().subtitle }}</p>
+  </div>
+
+  <div class="skills-list">
+    @for (skill of skillsWithIcons(); track skill.name) {
+      <div class="skill-item">
+        <div class="skill-icon">
+          <span [innerHTML]="(skill.svgIcon$ | async) ?? ''"></span>
+        </div>
+        <div class="skill-details">
+          <div class="skill-info">
+            <span class="skill-name">{{ skill.name }}</span>
+            <span class="skill-level">{{ getProficiency(skill.percentage).text }}</span>
+          </div>
+          <div class="progress-bar-bg">
+            <div class="progress-bar-fill" [style.width.%]="skill.percentage"></div>
+          </div>
+        </div>
+      </div>
+    }
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="toggle-container">
+  <app-icon [icon]="sunIcon" class="icon sun" aria-hidden="true"></app-icon>
+
+  <button
+    class="toggle-switch"
+    type="button"
+    [attr.aria-pressed]="isToggled()"
+    (click)="toggle()"
+    aria-label="Toggle dark mode"
+  >
+    <span class="switch-thumb" [class.toggled]="isToggled()"></span>
+  </button>
+
+  <app-icon [icon]="moonIcon" class="icon moon" aria-hidden="true"></app-icon>
+</div>

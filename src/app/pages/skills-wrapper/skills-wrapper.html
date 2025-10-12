@@ -1,0 +1,17 @@
+<section id="hard-skills" class="skills-wrapper-section" [class.dark]="currentTheme() === 'dark'">
+  <div class="skills-wrapper-container">
+    <app-skills
+      [data]="hardSkills()"
+      [currentTheme]="currentTheme()"
+      [currentLanguage]="currentLanguage()" />
+  </div>
+</section>
+
+<section id="soft-skills" class="skills-wrapper-section" [class.dark]="currentTheme() === 'dark'">
+  <div class="skills-wrapper-container">
+    <app-skills
+      [data]="softSkills()"
+      [currentTheme]="currentTheme()"
+      [currentLanguage]="currentLanguage()" />
+  </div>
+</section>

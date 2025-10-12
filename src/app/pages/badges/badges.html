@@ -1,0 +1,33 @@
+<section id="badges" class="badges-section" [class.dark]="currentTheme() === 'dark'">
+  <div class="badges-container">
+    <div class="badges-header">
+      <h2>{{ sectionTitle() }}</h2>
+      <p class="subtitle">{{ sectionSubtitle() }}</p>
+    </div>
+
+    <div class="badges-grid">
+      @for (badge of badges(); track badge.link) {
+      <a [href]="badge.link" target="_blank" rel="noopener noreferrer" class="badge-card">
+        <div class="badge-image-container">
+          <img [src]="badge.image" [alt]="badge.name" class="badge-image" />
+        </div>
+        <div class="badge-content">
+          <h3 class="badge-name">{{ badge.name }}</h3>
+          <p class="badge-issuer">
+            {{ currentLanguage() === 'pt' ? 'Emitido por' : 'Issued by' }}
+            <strong>{{ badge.created_by_name }}</strong>
+          </p>
+          <p class="badge-date">
+            {{ badge.issued_at | date : (currentLanguage() === 'pt' ? 'dd/MM/yyyy' : 'longDate') }}
+          </p>
+          <div class="badge-skills">
+            @for(skill of badge.skills; track skill) {
+            <span class="skill-tag">{{ skill }}</span>
+            }
+          </div>
+        </div>
+      </a>
+      }
+    </div>
+  </div>
+</section>

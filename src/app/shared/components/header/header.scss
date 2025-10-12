@@ -1,0 +1,199 @@
+@use '../../../shared/scss/variables' as var;
+
+.header {
+  font-family: var.$font-family-main;
+  background-color: var.$background-body-light;
+  color: var.$text-title-light;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0 1rem;
+  height: 60px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+
+  &.dark {
+    background-color: var.$background-body-dark;
+    color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+  }
+
+  &__logo {
+    h1 {
+      margin: 0;
+      font-weight: 700;
+      font-size: 1.5rem;
+      user-select: none;
+      cursor: default;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .dark & {
+        color: white;
+      }
+    }
+  }
+
+  &__navigation {
+    display: flex;
+
+    nav {
+      ul {
+        list-style: none;
+        display: flex;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin-left: 1.5rem;
+
+          a {
+            text-decoration: none;
+            color: var.$text-paragraph-light;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: color 0.3s ease;
+
+            &:hover,
+            &:focus {
+              color: var.$text-subtitle-light;
+              outline: none;
+            }
+
+            .dark & {
+              color: white;
+
+              &:hover,
+              &:focus {
+                color: var.$text-subtitle-dark;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    &.open {
+      display: block;
+      position: absolute;
+      top: 60px;
+      left: 0;
+      right: 0;
+      padding: 1rem 0;
+
+      background-color: rgba(255, 255, 255, 0.15); // vidro claro para light mode
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+      nav ul {
+        flex-direction: column;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+          margin: 0.75rem 0;
+
+          a {
+            color: var.$text-paragraph-light;
+            font-weight: 600;
+            font-size: 1rem;
+            text-decoration: none;
+            transition: color 0.3s ease;
+
+            &:hover,
+            &:focus {
+              color: var.$text-subtitle-light;
+              outline: none;
+            }
+          }
+        }
+      }
+
+      .dark & {
+        background-color: rgba(15, 23, 42, 0.4); // vidro escuro para dark mode
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.7);
+
+        nav ul li a {
+          color: white;
+
+          &:hover,
+          &:focus {
+            color: var.$text-subtitle-dark;
+          }
+        }
+      }
+    }
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  .dark & {
+    &__buttons {
+      button {
+        color: white;
+
+        &:hover,
+        &:focus {
+          background-color: var.$button-hover-dark;
+          color: white;
+        }
+      }
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+
+    button {
+      border: none;
+      background-color: transparent;
+      color: var.$text-paragraph-light;
+      cursor: pointer;
+      font-weight: 600;
+      font-size: 1rem;
+      padding: 0.4rem 0.75rem;
+      margin-left: 0.75rem;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover,
+      &:focus {
+        background-color: var.$button-hover-light;
+        color: white;
+        outline: none;
+      }
+    }
+
+    .lang-toggle-btn {
+      span {
+        user-select: none;
+      }
+    }
+
+    .hamburger-btn {
+      display: none;
+      padding: 0.5rem;
+      font-size: 1.25rem;
+
+      @media (max-width: 1024px) {
+        display: flex;
+      }
+    }
+  }
+}

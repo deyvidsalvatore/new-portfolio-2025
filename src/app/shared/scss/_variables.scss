@@ -1,0 +1,35 @@
+// Light mode
+$background-body-light: hsl(210, 40%, 96%);
+$background-card-light: hsl(210, 50%, 98%);
+$text-title-light: hsl(204, 85%, 30%);
+$text-paragraph-light: hsl(204, 85%, 40%);
+$text-subtitle-light: hsl(204, 95%, 45%);
+$button-background-light: hsl(204, 85%, 43%);
+$button-hover-light: hsl(204, 90%, 35%);
+$background-popover-light: hsl(210, 40%, 96%);
+$border-light: hsl(210, 40%, 85%);
+$muted-light: hsl(210, 40%, 85%);
+$muted-foreground-light: hsl(210, 30%, 55%);
+$destructive-light: hsl(0, 75%, 60%);
+$destructive-foreground-light: hsl(0, 0%, 98%);
+
+// Dark mode
+$background-body-dark: hsl(240, 10%, 3.9%);
+$background-card-dark: hsl(240, 10%, 3.9%);
+$text-title-dark: hsl(0, 0%, 98%);
+$text-paragraph-dark: hsl(240, 5%, 65%);
+$text-subtitle-dark: hsl(204, 89%, 69%);
+$button-background-dark: hsl(204, 89%, 69%);
+$button-hover-dark: hsl(196, 94%, 53%);
+$background-popover-dark: hsl(240, 10%, 3.9%);
+$border-dark: hsl(240, 4%, 16%);
+$muted-dark: hsl(240, 4%, 16%);
+$muted-foreground-dark: hsl(240, 5%, 65%);
+$destructive-dark: hsl(0, 63%, 31%);
+$destructive-foreground-dark: hsl(0, 0%, 98%);
+
+// Other
+$accent-color: #0284c7;
+
+// Typography
+$font-family-main: 'Inter', sans-serif;

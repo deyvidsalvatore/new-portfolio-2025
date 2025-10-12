@@ -1,0 +1,152 @@
+@use '../../shared/scss/variables' as var;
+
+.testimonials-section {
+  padding: 5rem 2rem;
+  background-color: var.$background-body-light;
+  transition: background-color 0.3s ease;
+
+  &.dark {
+    background-color: var.$background-body-dark;
+  }
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonials-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var.$text-title-light;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: var.$text-subtitle-light;
+  }
+}
+
+.testimonials-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.testimonial-card {
+  background-color: var.$background-card-light;
+  border: 1px solid var.$border-light;
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  z-index: 2;
+}
+
+.profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var.$border-light;
+}
+
+.full-name-link {
+  text-decoration: none;
+}
+
+.full-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var.$text-title-light;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var.$accent-color;
+  }
+}
+
+.job-title {
+  font-size: 0.9rem;
+  color: var.$muted-foreground-light;
+}
+
+.testimonial-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var.$text-paragraph-light;
+  font-style: italic;
+  margin: 0;
+  z-index: 2;
+  position: relative;
+}
+
+
+.quote-icon {
+  position: absolute;
+  top:  0;
+  right: 1.5rem;
+  color: var.$muted-light;
+  z-index: 1;
+  opacity: 0.8;
+  transition: color 0.3s ease;
+  font-size: 4rem;
+}
+
+.testimonials-section.dark {
+  .testimonials-header {
+    h2 { color: var.$text-title-dark; }
+    .subtitle { color: var.$text-subtitle-dark; }
+  }
+
+  .testimonial-card {
+    background-color: var.$background-card-dark;
+    border-color: var.$border-dark;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .profile-image {
+    border-color: var.$border-dark;
+  }
+
+  .full-name {
+    color: var.$text-title-dark;
+    &:hover {
+      color: var.$text-subtitle-dark;
+    }
+  }
+
+  .job-title {
+    color: var.$muted-foreground-dark;
+  }
+
+  .testimonial-text {
+    color: var.$text-paragraph-dark;
+  }
+
+  .quote-icon {
+    color: var.$muted-dark;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonials-section {
+    padding: 4rem 1rem;
+  }
+}

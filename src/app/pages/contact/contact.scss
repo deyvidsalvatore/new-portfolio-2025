@@ -1,0 +1,101 @@
+@use '../../shared/scss/variables' as var;
+
+.contact-section {
+  padding: 5rem 2rem;
+  background-color: var.$background-body-light;
+  color: var.$text-paragraph-light;
+  text-align: center;
+  transition: background-color 0.3s ease;
+
+  .contact-header {
+    h2 {
+      color: var.$text-title-light;
+    }
+    p {
+      color: var.$text-subtitle-light;
+    }
+  }
+
+  .contact-link-item {
+    border-color: var.$border-light;
+    color: var.$text-paragraph-light;
+    &:hover {
+      background-color: var.$accent-color;
+      border-color: var.$accent-color;
+      color: #fff;
+    }
+  }
+
+  &.dark {
+    background-color: var.$background-body-dark;
+    color: var.$text-paragraph-dark;
+
+    .contact-header {
+      h2 {
+        color: var.$text-title-dark;
+      }
+      p {
+        color: var.$text-subtitle-dark;
+      }
+    }
+
+    .contact-link-item {
+      border-color: var.$border-dark;
+      color: var.$text-paragraph-dark;
+    }
+  }
+}
+
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-header {
+  margin-bottom: 2.5rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+.contact-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.contact-link-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border: 2px solid;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 4rem 1rem;
+  }
+
+  .contact-link-item {
+    width: 50px;
+    height: 50px;
+    font-size: 1.25rem;
+  }
+}

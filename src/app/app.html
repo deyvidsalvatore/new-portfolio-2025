@@ -1,0 +1,60 @@
+@defer {
+<app-header
+  [navLinks]="_dataService.navLinks()"
+  [currentLanguage]="currentLanguage"
+  [currentTheme]="currentTheme"
+  (toggleTheme)="_themeService.toggleTheme()"
+  (toggleLanguage)="_dataService.toggleLanguage()"
+/>
+<main>
+  <app-hero
+    [hero]="this._dataService.heroSection()"
+    [roles]="this._dataService.roles()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+  <app-about
+    [aboutContent]="this._dataService.aboutMe()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+  <app-experiences
+    [experiencesContent]="this._dataService.experiences()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+  <app-badges
+    [badges]="this._dataService.badges()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+  <app-skills-wrapper
+    [hardSkills]="this._dataService.hardSkillsSection()"
+    [softSkills]="this._dataService.softSkillsSection()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+  <app-projects
+    [projects]="this._dataService.projects()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+  <app-testimonials
+    [testimonials]="this._dataService.testimonials()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+  <app-contact
+    [contactContent]="this._dataService.getInTouch()"
+    [currentTheme]="currentTheme"
+    [currentLanguage]="currentLanguage"
+  />
+</main>
+<app-footer
+  [footerContent]="this._dataService.footer()"
+  [currentLanguage]="currentLanguage"
+  [currentTheme]="currentTheme"
+/>
+} @placeholder {
+<div class="loading-spinner" role="status" aria-label="Loading"></div>
+}

@@ -1,0 +1,101 @@
+@use '../../../shared/scss/variables' as var;
+
+.skills-section-inner {
+  width: 100%;
+}
+
+.skills-header {
+  text-align: center;
+  margin-bottom: 3rem;
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var.$text-title-light;
+    margin-bottom: 0.5rem;
+  }
+
+  .subtitle {
+    font-size: 1.2rem;
+    color: var.$text-subtitle-light;
+  }
+}
+
+.skills-list {
+  display: grid;
+  gap: 2rem 3rem;
+  grid-template-columns: 1fr;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.skill-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.skill-icon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  span {
+    display: inherit;
+    color: var.$text-subtitle-light;
+  }
+}
+
+.skill-details {
+  width: 100%;
+}
+
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 0.5rem;
+}
+
+.skill-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var.$text-paragraph-light;
+}
+
+.skill-level {
+  font-size: 0.9rem;
+  color: var.$muted-foreground-light;
+}
+
+.progress-bar-bg {
+  height: 8px;
+  width: 100%;
+  background-color: var.$muted-light;
+  border-radius: 9999px;
+  overflow: hidden;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: var.$accent-color;
+  border-radius: 9999px;
+  transition: width 0.8s ease-in-out;
+}
+
+.dark {
+  .skills-header {
+    h2 { color: var.$text-title-dark; }
+    .subtitle { color: var.$text-subtitle-dark; }
+  }
+
+  .skill-icon span { color: var.$text-subtitle-dark; }
+  .skill-name { color: var.$text-paragraph-dark; }
+  .skill-level { color: var.$muted-foreground-dark; }
+  .progress-bar-bg { background-color: var.$muted-dark; }
+}

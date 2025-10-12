@@ -1,0 +1,19 @@
+@use '../../shared/scss/variables' as var;
+
+.skills-wrapper-section {
+  padding: 5rem 2rem;
+  background-color: var.$background-body-light;
+  transition: background-color 0.3s ease;
+
+  &.dark {
+    background-color: var.$background-body-dark;
+  }
+}
+
+.skills-wrapper-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}

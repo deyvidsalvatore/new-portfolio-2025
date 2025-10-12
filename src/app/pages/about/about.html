@@ -1,0 +1,22 @@
+<section id="about" class="about-section" [class.dark]="currentTheme() === 'dark'">
+  <div class="about-container">
+    <div class="about-header">
+      <h2>{{ sectionTitle() }}</h2>
+      <p class="subtitle">{{ sectionSubtitle() }}</p>
+    </div>
+
+    <div class="about-grid">
+      @for (item of aboutContent(); track item.id) {
+        <div class="about-card">
+          <div class="card-icon">
+            <fa-icon [icon]="item.icon"></fa-icon>
+          </div>
+          <div class="card-content">
+            <h3>{{ item.title }}</h3>
+            <p>{{ item.content }}</p>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

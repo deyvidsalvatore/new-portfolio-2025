@@ -1,0 +1,68 @@
+@use './app/shared/scss/variables' as var;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var.$font-family-main;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.light {
+  background-color: var.$background-body-light;
+  color: var.$text-paragraph-light;
+  font-family: var.$font-family-main;
+}
+
+body.light .card {
+  background-color: var.$background-card-light;
+  color: var.$text-paragraph-light;
+}
+
+body.light h1, body.light h2 {
+  color: var.$text-title-light;
+}
+
+body.light .subtitle {
+  color: var.$text-subtitle-light;
+}
+
+body.light button {
+  background-color: var.$button-background-light;
+  color: white;
+
+  &:hover {
+    background-color: var.$button-hover-light;
+  }
+}
+
+body.dark {
+  background-color: var.$background-body-dark;
+  color: var.$text-paragraph-dark;
+  font-family: var.$font-family-main;
+}
+
+body.dark .card {
+  background-color: var.$background-card-dark;
+  color: var.$text-paragraph-dark;
+}
+
+body.dark h1, body.dark h2 {
+  color: var.$text-title-dark;
+}
+
+body.dark .subtitle {
+  color: var.$text-subtitle-dark;
+}
+
+body.dark button {
+  background-color: var.$button-background-dark;
+  color: white;
+
+  &:hover {
+    background-color: var.$button-hover-dark;
+  }
+}

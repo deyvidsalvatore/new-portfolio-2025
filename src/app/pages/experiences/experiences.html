@@ -1,0 +1,36 @@
+<section id="experiences" class="experiences-section" [class.dark]="currentTheme() === 'dark'">
+  <div class="experiences-container">
+    <div class="experiences-header">
+      <h2>{{ sectionTitle() }}</h2>
+      <p class="subtitle">{{ sectionSubtitle() }}</p>
+    </div>
+
+    <div class="timeline">
+      @for (experience of experiencesContent(); track experience.company + experience.period) {
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="experience-card">
+              <div class="card-header">
+                @if (experience.logo) {
+                  <img [src]="experience.logo" [alt]="experience.company + ' logo'" class="company-logo">
+                }
+                <div>
+                  <h3>{{ experience.title }}</h3>
+                  <p class="company-name">{{ experience.company }}</p>
+                  <p class="period-location">{{ experience.period }} | {{ experience.location }}</p>
+                </div>
+              </div>
+              <p class="description">{{ experience.description }}</p>
+              <div class="tools">
+                @for (tool of experience.tools; track tool) {
+                  <span class="tool-tag">{{ tool }}</span>
+                }
+              </div>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>

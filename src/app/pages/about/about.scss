@@ -1,0 +1,121 @@
+@use '../../shared/scss/variables' as var;
+
+.about-section {
+  padding: 5rem 2rem;
+  background-color: var.$background-body-light;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .about-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var.$text-title-light;
+      margin-bottom: 0.5rem;
+    }
+
+    .subtitle {
+      font-size: 1.2rem;
+      color: var.$text-subtitle-light;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+
+  .about-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .about-card {
+    background-color: var.$background-card-light;
+    border-radius: 12px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.25rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid var.$border-light;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    }
+  }
+
+  .card-icon {
+    background-color: var.$accent-color;
+    color: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+
+  .card-content {
+    h3 {
+      font-size: 1.25rem;
+      color: var.$text-title-light;
+      margin-bottom: 0.5rem;
+      font-weight: 700;
+    }
+
+    p {
+      font-size: 1rem;
+      color: var.$text-paragraph-light;
+      line-height: 1.6;
+    }
+  }
+
+  &.dark {
+    background-color: var.$background-body-dark;
+
+    .about-header {
+      h2 { color: var.$text-title-dark; }
+      .subtitle { color: var.$text-subtitle-dark; }
+    }
+
+    .about-card {
+      background-color: hsl(240, 4%, 10%);
+      border: 1px solid var.$border-dark;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+       &:hover {
+         box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+       }
+    }
+
+    .card-content {
+      h3 { color: var.$text-title-dark; }
+      p { color: var.$text-paragraph-dark; }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-section {
+    padding: 4rem 1rem;
+
+    .about-header h2 {
+      font-size: 2rem;
+    }
+
+    .about-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+}

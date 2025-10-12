@@ -1,0 +1,32 @@
+<section id="testimonials" class="testimonials-section" [class.dark]="currentTheme() === 'dark'">
+  <div class="testimonials-container">
+    <div class="testimonials-header">
+      <h2>{{ sectionTitle() }}</h2>
+      <p class="subtitle">{{ sectionSubtitle() }}</p>
+    </div>
+
+    <div class="testimonials-grid">
+      @for (testimonial of testimonials(); track testimonial.fullName) {
+        <div class="testimonial-card">
+          <div class="card-header">
+            <img [src]="testimonial.profileImg" [alt]="testimonial.fullName" class="profile-image">
+            <div class="profile-info">
+              <a [href]="testimonial.profileLink" target="_blank" rel="noopener noreferrer" class="full-name-link">
+                <h3 class="full-name">{{ testimonial.fullName }}</h3>
+              </a>
+              <p class="job-title">{{ testimonial.jobTitle }}</p>
+            </div>
+          </div>
+          <div class="card-body">
+            <blockquote class="testimonial-text">
+              "{{ testimonial.relationship.relationDescription }}"
+            </blockquote>
+          </div>
+          <div class="quote-icon">
+            <fa-icon [icon]="quoteIcon"></fa-icon>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
+</section>
