@@ -1,7 +1,18 @@
-import { signal } from "@angular/core";
-import { Testimonial } from "../shared/models/testimonial.model";
+import { signal } from '@angular/core';
+import { Testimonial } from '../shared/models/testimonial.model';
 
 export const TESTIMONIALS_EN: Array<Testimonial> = [
+  {
+    fullName: 'Paulo Henrique',
+    profileImg: 'assets/img/paulo_pic.png',
+    jobTitle: 'Data Analyst | Excel | Power BI',
+    relationship: {
+      relationDate: new Date('Dec 12, 2025 00:00:00'),
+      relationDescription:
+        'Well, Diego was the one who helped me at the beginning of my journey, always there with valuable tips, guidance on resumes, important advice, and even course recommendations that made all the difference. He always had a lot of calm and patience to teach, explain his ideas, and answer all my questions, no matter how simple they were.',
+    },
+    profileLink: 'https://www.linkedin.com/in/paulo-henri/',
+  },
   {
     fullName: 'Deyvid Santos',
     profileImg: 'assets/img/deyvid_pic.jpg',
@@ -48,8 +59,18 @@ export const TESTIMONIALS_EN: Array<Testimonial> = [
   },
 ];
 
-
 export const TESTIMONIALS_PT: Array<Testimonial> = [
+  {
+    fullName: 'Paulo Henrique',
+    profileImg: 'assets/img/paulo_pic.png',
+    jobTitle: 'Análista de Dados | Excel | Power BI',
+    relationship: {
+      relationDate: new Date('Dec 12, 2025 00:00:00'),
+      relationDescription:
+        'Bom, o Diego foi quem me ajudou no começo da minha jornada, sempre presente com dicas valiosas, orientações sobre currículo, conselhos importantes e até indicações de cursos que fizeram toda a diferença. Ele sempre teve muita calma e paciência para ensinar, explicar suas ideias e tirar todas as minhas dúvidas, por mais simples que fossem. Eu digo com tranquilidade que, sem a ajuda do Diego, minha trajetória na área de dados provavelmente demoraria mais para ganhar forma e seria marcada por muito mais incertezas. A presença dele tornou o caminho mais claro, mais leve e cheio de aprendizados. Sou muito grato por todo o apoio e pela dedicação que ele sempre demonstrou.',
+    },
+    profileLink: 'https://www.linkedin.com/in/paulo-henri/',
+  },
   {
     fullName: 'Deyvid Santos',
     profileImg: 'assets/img/deyvid_pic.jpg',
