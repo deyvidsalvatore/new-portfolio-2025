@@ -12,13 +12,13 @@ const PROJECTS_DATA_EN: Array<Project> = [
     imageUrl: 'assets/projects/01-dashboard.jpg',
   },
   {
-    title: 'Triggo Case Study (Senior-level ML Pipeline)',
+    title: 'Triggo Case Study',
     description:
       'A comprehensive, Object-Oriented Machine Learning pipeline and Analytics Dashboard built during a professional technical test. Features fully automated Clustering with dynamic Silhouette Score logic, centralized logging, Pytest integration, and actionable Marketing strategies for Business metrics out of the Olist e-commerce massive dataset.',
     viewLink:
       'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/dashboard.ipynb',
     sourceCode: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025',
-    imageUrl: 'assets/projects/triggo_demo.gif',
+    imageUrl: 'assets/projects/ml_pipeline.png',
   },
   {
     title: 'Olist Analytics & Data Engineering',
@@ -40,13 +40,13 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     imageUrl: 'assets/projects/01-dashboard.jpg',
   },
   {
-    title: 'Estudo de Caso Triggo (Machine Learning com Orientação a Objetos)',
+    title: 'Estudo de Caso Triggo',
     description:
       'Pipeline Sênior e Dashboard Analytics construídos durante o teste técnico Triggo 2025. Inclui Clusterização OOD com automação via Silhouette Score dinâmico, MLOps, logs centralizados, integrações Pytest e mapeamento automático para estratégias de negócios sobre o Big Data do e-commerce Olist.',
     viewLink:
       'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/dashboard.ipynb',
     sourceCode: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025',
-    imageUrl: 'assets/projects/triggo_demo.gif',
+    imageUrl: 'assets/projects/ml_pipeline.png',
   },
   {
     title: 'Engenharia de Dados & Analytics Olist',
