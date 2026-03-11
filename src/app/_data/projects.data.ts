@@ -25,7 +25,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
     description: 'End-to-end portfolio project focusing on Brazilian e-commerce dataset analysis. Includes automated ETL data ingestion, PostgreSQL Data Warehouse modeling, and a Power BI Business Intelligence dashboard.',
     viewLink: 'https://github.com/DiegoPablo2021/olist-analytics',
     sourceCode: 'https://github.com/DiegoPablo2021/olist-analytics',
-    imageUrl: 'assets/projects/03-olist.png',
+    imageUrl: 'assets/projects/olist_architecture_flow.png',
   },
 ];
 
@@ -53,7 +53,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     description: 'Projeto de portfólio End-to-End focado na análise de dados do e-commerce Olist. Inclui ingestão automatizada de dados (ETL), modelagem de Data Warehouse em PostgreSQL e Dashboard Executivo no Power BI.',
     viewLink: 'https://github.com/DiegoPablo2021/olist-analytics',
     sourceCode: 'https://github.com/DiegoPablo2021/olist-analytics',
-    imageUrl: 'assets/projects/03-olist.png',
+    imageUrl: 'assets/projects/olist_architecture_flow.png',
   },
 ];
 
