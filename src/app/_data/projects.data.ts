@@ -18,7 +18,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
     viewLink:
       'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/dashboard.ipynb',
     sourceCode: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025',
-    imageUrl: 'assets/projects/ml_pipeline.png',
+    imageUrl: 'assets/projects/ml_pipeline_dashboard.png',
   },
   {
     title: 'Olist Analytics & Data Engineering',
@@ -46,7 +46,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     viewLink:
       'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025/blob/main/dashboard.ipynb',
     sourceCode: 'https://github.com/DiegoPablo2021/Case_Trainee_Triggo_2025',
-    imageUrl: 'assets/projects/ml_pipeline.png',
+    imageUrl: 'assets/projects/ml_pipeline_dashboard.png',
   },
   {
     title: 'Engenharia de Dados & Analytics Olist',
