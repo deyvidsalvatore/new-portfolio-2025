@@ -5,11 +5,11 @@ const PROJECTS_DATA_EN: Array<Project> = [
   {
     title: 'Data Dashboard',
     description:
-      'Interactive commercial dashboard developed in Power BI, featuring detailed business metrics and KPIs',
+      'Executive Sales Dashboard developed in Power BI. Architecture based on data extraction via Excel, featuring relational data modeling and the structuring of complex financial metrics using DAX language, providing a comprehensive analytical view of revenue and KPIs.',
     viewLink:
       'https://github.com/DiegoPablo2021/dashboard-comercial/raw/1689a5ab3aaa710f106952eea3305dbd85e0d622/dashboard-comercia.pbix',
     sourceCode: 'https://github.com/DiegoPablo2021/dashboard-comercial',
-    imageUrl: 'assets/projects/01-dashboard.jpg',
+    imageUrl: 'assets/projects/dashboard_neon_flow.png',
   },
   {
     title: 'Triggo Case Study',
@@ -33,11 +33,11 @@ export const PROJECTS_DATA_PT: Array<Project> = [
   {
     title: 'Dashboard de Dados',
     description:
-      'Dashboard comercial interativo desenvolvido no Power BI, com métricas de negócio e KPIs detalhados.',
+      'Dashboard Executivo de Vendas desenvolvido em Power BI. Arquitetura baseada em extração de dados via Excel, com modelagem relacional e estruturação de dezenas de métricas complexas financeiras e comerciais utilizando a linguagem DAX, oferecendo visão analítica completa do faturamento.',
     viewLink:
       'https://github.com/DiegoPablo2021/dashboard-comercial/raw/1689a5ab3aaa710f106952eea3305dbd85e0d622/dashboard-comercia.pbix',
     sourceCode: 'https://github.com/DiegoPablo2021/dashboard-comercial',
-    imageUrl: 'assets/projects/01-dashboard.jpg',
+    imageUrl: 'assets/projects/dashboard_neon_flow.png',
   },
   {
     title: 'Estudo de Caso Triggo',
