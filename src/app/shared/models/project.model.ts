@@ -3,6 +3,7 @@ export interface Project {
   title: string;
   description: string;
   viewLink: string;
+  appLink?: string;
   sourceCode: string;
   imageUrl: string;
 }

@@ -88,6 +88,7 @@
 .project-footer {
   padding: 0 1.5rem 1.5rem;
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   border-top: 1px solid var.$border-light;
   margin-top: auto;
@@ -103,6 +104,8 @@
   border-radius: 8px;
   font-weight: 600;
   text-decoration: none;
+  flex: 1 1 calc(50% - 0.5rem);
+  min-width: 120px;
   background-color: var.$accent-color;
   color: #fff;
   transition: background-color 0.3s ease;

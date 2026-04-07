@@ -9,6 +9,7 @@ const PROJECTS_DATA_EN: Array<Project> = [
       'End-to-end data engineering case that transforms LinkedIn exports into an analytics app with Python ingestion, DuckDB warehouse, dbt modeling, and Streamlit storytelling.',
     viewLink:
       'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
+    appLink: 'https://linkedin-career-intelligence-lakehouse.streamlit.app/',
     sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
     imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
   },
@@ -66,6 +67,7 @@ export const PROJECTS_DATA_PT: Array<Project> = [
       'Case end-to-end de engenharia de dados que transforma exportações do LinkedIn em um app analítico com ingestão em Python, warehouse em DuckDB, modelagem em dbt e storytelling em Streamlit.',
     viewLink:
       'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
+    appLink: 'https://linkedin-career-intelligence-lakehouse.streamlit.app/',
     sourceCode: 'https://github.com/DiegoPablo2021/linkedin-career-intelligence-lakehouse',
     imageUrl: 'assets/projects/linkedin_lakehouse_stack_flow.svg',
   },
