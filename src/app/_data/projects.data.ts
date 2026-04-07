@@ -43,13 +43,6 @@ const PROJECTS_DATA_EN: Array<Project> = [
     sourceCode: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
     imageUrl: 'assets/projects/lighthouse_end_to_end.png',
   },
-  {
-    title: 'Strategic Sales Analysis',
-    description: 'Executive dashboard developed in Power BI for Jaar Consult evaluation. Features comprehensive analysis on sales performance, discounts strategy, and product KPIs.',
-    viewLink: 'https://github.com/DiegoPablo2021/PBI-Jaar-Consult',
-    sourceCode: 'https://github.com/DiegoPablo2021/PBI-Jaar-Consult',
-    imageUrl: 'assets/projects/jaar_end_to_end.png',
-  },
 ];
 
 export const PROJECTS_DATA_PT: Array<Project> = [
@@ -93,13 +86,6 @@ export const PROJECTS_DATA_PT: Array<Project> = [
     viewLink: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
     sourceCode: 'https://github.com/DiegoPablo2021/Desafio-Lighthouse-Dados-AI',
     imageUrl: 'assets/projects/lighthouse_end_to_end.png',
-  },
-  {
-    title: 'Análise Estratégica de Vendas',
-    description: 'Dashboard executivo desenvolvido em Power BI para a avaliação da Jaar Consult. Apresenta análises abrangentes sobre a performance de vendas, estratégia de descontos e KPIs de produtos.',
-    viewLink: 'https://github.com/DiegoPablo2021/PBI-Jaar-Consult',
-    sourceCode: 'https://github.com/DiegoPablo2021/PBI-Jaar-Consult',
-    imageUrl: 'assets/projects/jaar_end_to_end.png',
   },
 ];
 
